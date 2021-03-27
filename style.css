@@ -1,0 +1,107 @@
+    *{
+        margin:0;
+        padding: 0;
+    }
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background: crimson;
+}
+
+#titulo{
+    width: 100%;
+    height: 30%;
+    background: blue;
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#cuerpo{
+    width: 100%;
+    height: 50%;
+    background: white;
+    display: flex;  
+}
+
+#titulo h1{
+    font-size: 8vh;
+    color: black;
+}
+
+#titulo img{
+    height: 150px;
+    width:  150px;
+    animation-name: spinning-circle;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.botones:hover {
+    width: 30%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+.botones button{
+    width: 100%;
+    height: 25%;
+    background: whitesmoke;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+	letter-spacing: 2px;
+	text-decoration: none;
+	overflow: hidden;
+    border: none;
+}
+
+.Contenido{
+width: 70%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding-left: 20%;
+color: black;
+position: relative;
+}
+
+#footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
+}
+
+a{
+    font-size: 70px;
+}
+
+.DANY{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 40px;
+}
+
+@keyframes spinning-circle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
